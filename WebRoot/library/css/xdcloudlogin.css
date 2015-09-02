@@ -1,0 +1,57 @@
+html{
+	height: 100%;
+}
+
+body{
+	background: transparent url(../img/bkg-win8.jpg) repeat 0 0;
+	/*background: transparent url(../img/darkgreen-bkg.png) repeat 0 0;*/
+	/*background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#555555), to(#555555));*/
+	/*background-color: #004050;*/
+	background-repeat: repeat;
+	background-position: 0 0;
+	margin-top:12%;
+	color: #FFF;
+}
+
+input{
+	height: 45px !important;
+	min-width: 310px !important;
+}
+
+input:hover{
+	border-color: red;
+}
+
+input:active{
+	border-color: red;
+}
+
+a{
+	color: yellow;
+	background-color: red;
+}
+
+a span:hover{
+	border:2px solid yellow !important;
+	color: yellow;
+	background-color: red;
+}
+
+.commandring{
+	color: #FFF;
+}
+
+.commandicon{
+	color: #FFF;
+}
+
+.loginbox{
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.loginbox-element{
+	display:inline-block;
+	vertical-align:middle;
+}

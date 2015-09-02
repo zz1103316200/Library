@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+   <servlet>
+  	<description>c3p0</description>
+  	<servlet-name>init</servlet-name>
+  	<servlet-class>com.library.init.DataSourceInit</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addManageAccountServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.addManageAccountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteManageAccountServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteManageAccountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateManageAccountServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.updateManageAccountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manageAccountListServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.manageAccountListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>volunteerList</servlet-name>
+    <servlet-class>com.library.manageAccount.volunteerList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>volunteerDetailServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.volunteerDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>activeListServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.activeListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addActiveServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.addActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>searchVolunteerServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.searchVolunteerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>volunteerUploadServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.volunteerUploadServlet</servlet-class>
+  </servlet>
+ 
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showRedDesignServlet</servlet-name>
+    <servlet-class>com.library.volunteerWebFront.showRedDesignServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manageAccountLoginServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.manageAccountLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manageAccountHoutaiServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.manageAccountHoutaiServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteActiveServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addVolunteerActiveServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.addVolunteerActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>activeDetailServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.activeDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateActiveServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.updateActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>newsListServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.newsListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addNewsServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.addNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>newsDetailServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.newsDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteNewsServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateNewsServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.updateNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectActiveVolunteerInAjaxServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.selectActiveVolunteerInAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateVolunteerActiveServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.updateVolunteerActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontNewsListServlet</servlet-name>
+    <servlet-class>com.library.front.frontNewsListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontNewsDetailServlet</servlet-name>
+    <servlet-class>com.library.front.frontNewsDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontActiveListServlet</servlet-name>
+    <servlet-class>com.library.front.frontActiveListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontActiveDetailServlet</servlet-name>
+    <servlet-class>com.library.front.frontActiveDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontTrainListServlet</servlet-name>
+    <servlet-class>com.library.front.frontTrainListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>downloadTrainServlet</servlet-name>
+    <servlet-class>com.library.front.downloadTrainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>trainListServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.trainListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteTrainServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteTrainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>uploadTrainServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.uploadTrainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectUserNameServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.selectUserNameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addVolunteerServlet</servlet-name>
+    <servlet-class>com.library.front.addVolunteerServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>volunteerShenheServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.volunteerShenheServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontVolunteerListServlet</servlet-name>
+    <servlet-class>com.library.front.frontVolunteerListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showFrontServlet</servlet-name>
+    <servlet-class>com.library.front.showFrontServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>tiaozhuanServlet</servlet-name>
+    <servlet-class>com.library.front.tiaozhuanServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteVolunteerServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteVolunteerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>logOutServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.logOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteActiveVolunteerServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteActiveVolunteerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateVolunteerServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.updateVolunteerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>volunteerLoginServlet</servlet-name>
+    <servlet-class>com.library.front.volunteerLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addArticleServlet</servlet-name>
+    <servlet-class>com.library.front.addArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontArticleDetailServlet</servlet-name>
+    <servlet-class>com.library.front.frontArticleDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontDeleteArticleServlet</servlet-name>
+    <servlet-class>com.library.front.frontDeleteArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontUpdateArticleServlet</servlet-name>
+    <servlet-class>com.library.front.frontUpdateArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontLogOutServlet</servlet-name>
+    <servlet-class>com.library.front.frontLogOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteArticleServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.deleteArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>articleDetailServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.articleDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>highSearchServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.highSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>frontSearchServlet</servlet-name>
+    <servlet-class>com.library.front.frontSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sampleVolunteerDetailServlet</servlet-name>
+    <servlet-class>com.library.front.sampleVolunteerDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updatePassWordServlet</servlet-name>
+    <servlet-class>com.library.front.updatePassWordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateManagePassWordServlet</servlet-name>
+    <servlet-class>com.library.manageAccount.updateManagePassWordServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+  <servlet-mapping>
+    <servlet-name>addManageAccountServlet</servlet-name>
+    <url-pattern>/servlet/addManageAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteManageAccountServlet</servlet-name>
+    <url-pattern>/servlet/deleteManageAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateManageAccountServlet</servlet-name>
+    <url-pattern>/servlet/updateManageAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>manageAccountListServlet</servlet-name>
+    <url-pattern>/servlet/manageAccountListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>volunteerList</servlet-name>
+    <url-pattern>/servlet/volunteerList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>volunteerDetailServlet</servlet-name>
+    <url-pattern>/servlet/volunteerDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>activeListServlet</servlet-name>
+    <url-pattern>/servlet/activeListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addActiveServlet</servlet-name>
+    <url-pattern>/servlet/addActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchVolunteerServlet</servlet-name>
+    <url-pattern>/servlet/searchVolunteerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>volunteerUploadServlet</servlet-name>
+    <url-pattern>/servlet/volunteerUploadServlet</url-pattern>
+  </servlet-mapping>
+
+ 
+  <servlet-mapping>
+    <servlet-name>showRedDesignServlet</servlet-name>
+    <url-pattern>/servlet/showRedDesignServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>manageAccountLoginServlet</servlet-name>
+    <url-pattern>/servlet/manageAccountLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>manageAccountHoutaiServlet</servlet-name>
+    <url-pattern>/servlet/manageAccountHoutaiServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteActiveServlet</servlet-name>
+    <url-pattern>/servlet/deleteActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addVolunteerActiveServlet</servlet-name>
+    <url-pattern>/servlet/addVolunteerActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>activeDetailServlet</servlet-name>
+    <url-pattern>/servlet/activeDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateActiveServlet</servlet-name>
+    <url-pattern>/servlet/updateActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>newsListServlet</servlet-name>
+    <url-pattern>/servlet/newsListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addNewsServlet</servlet-name>
+    <url-pattern>/servlet/addNewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>newsDetailServlet</servlet-name>
+    <url-pattern>/servlet/newsDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteNewsServlet</servlet-name>
+    <url-pattern>/servlet/deleteNewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateNewsServlet</servlet-name>
+    <url-pattern>/servlet/updateNewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectActiveVolunteerInAjaxServlet</servlet-name>
+    <url-pattern>/servlet/selectActiveVolunteerInAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateVolunteerActiveServlet</servlet-name>
+    <url-pattern>/servlet/updateVolunteerActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontNewsListServlet</servlet-name>
+    <url-pattern>/servlet/frontNewsListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontNewsDetailServlet</servlet-name>
+    <url-pattern>/servlet/frontNewsDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontActiveListServlet</servlet-name>
+    <url-pattern>/servlet/frontActiveListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontActiveDetailServlet</servlet-name>
+    <url-pattern>/servlet/frontActiveDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontTrainListServlet</servlet-name>
+    <url-pattern>/servlet/frontTrainListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>downloadTrainServlet</servlet-name>
+    <url-pattern>/servlet/downloadTrainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>trainListServlet</servlet-name>
+    <url-pattern>/servlet/trainListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteTrainServlet</servlet-name>
+    <url-pattern>/servlet/deleteTrainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>uploadTrainServlet</servlet-name>
+    <url-pattern>/servlet/uploadTrainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectUserNameServlet</servlet-name>
+    <url-pattern>/servlet/selectUserNameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addVolunteerServlet</servlet-name>
+    <url-pattern>/servlet/addVolunteerServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>volunteerShenheServlet</servlet-name>
+    <url-pattern>/servlet/volunteerShenheServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontVolunteerListServlet</servlet-name>
+    <url-pattern>/servlet/frontVolunteerListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showFrontServlet</servlet-name>
+    <url-pattern>/servlet/showFrontServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>tiaozhuanServlet</servlet-name>
+    <url-pattern>/servlet/tiaozhuanServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteVolunteerServlet</servlet-name>
+    <url-pattern>/servlet/deleteVolunteerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logOutServlet</servlet-name>
+    <url-pattern>/servlet/logOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteActiveVolunteerServlet</servlet-name>
+    <url-pattern>/servlet/deleteActiveVolunteerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateVolunteerServlet</servlet-name>
+    <url-pattern>/servlet/updateVolunteerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>volunteerLoginServlet</servlet-name>
+    <url-pattern>/servlet/volunteerLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addArticleServlet</servlet-name>
+    <url-pattern>/servlet/addArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontArticleDetailServlet</servlet-name>
+    <url-pattern>/servlet/frontArticleDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontDeleteArticleServlet</servlet-name>
+    <url-pattern>/servlet/frontDeleteArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontUpdateArticleServlet</servlet-name>
+    <url-pattern>/servlet/frontUpdateArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontLogOutServlet</servlet-name>
+    <url-pattern>/servlet/frontLogOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteArticleServlet</servlet-name>
+    <url-pattern>/servlet/deleteArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>articleDetailServlet</servlet-name>
+    <url-pattern>/servlet/articleDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>highSearchServlet</servlet-name>
+    <url-pattern>/servlet/highSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontSearchServlet</servlet-name>
+    <url-pattern>/servlet/frontSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sampleVolunteerDetailServlet</servlet-name>
+    <url-pattern>/servlet/sampleVolunteerDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatePassWordServlet</servlet-name>
+    <url-pattern>/servlet/updatePassWordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateManagePassWordServlet</servlet-name>
+    <url-pattern>/servlet/updateManagePassWordServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
